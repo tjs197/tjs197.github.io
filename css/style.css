@@ -1,0 +1,75 @@
+body {
+  color: #000000;
+  font-family: "Roboto Condensed", "Cabin Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a,
+a:link,
+a:visited {
+  color: #58355e;
+}
+
+a:hover {
+  color: #fff689;
+}
+
+#layout {
+  max-width: 960px;
+	margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "header header"
+  "nav introduction"
+  "geography people-and-society"
+  "economy economy"
+  "footer footer";
+}
+
+header{
+  grid-area:header;
+}
+
+nav{
+  grid-area:nav;
+  text-decorations: none;
+  color:#DC143C;
+  background-color:#fff689;
+}
+
+#introduction{
+  grid-area:introduction;
+}
+
+#geography{
+  grid-area:geography;
+}
+
+#people-and-society{
+  grid-area:people-and-society;
+}
+
+#economy{
+  grid-area:economy;
+}
+
+footer{
+  grid-area:footer;
+}
+
+h1{
+  color: #ffffff;
+}
+h2 {
+  margin-top: 0;
+}
+
+header,
+footer {
+  background-color: #DC143C;
+  padding-left: 10px;
+  grid-column: 1 / -1;
+}
