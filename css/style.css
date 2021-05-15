@@ -1,75 +1,109 @@
-body {
-  color: #000000;
-  font-family: "Roboto Condensed", "Cabin Regular", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+ margin:50px;
+ padding:30px;
+ max-width:90%;
+ font-family: 'Noto Sans', sans-serif;
+ font-size: 16px;
+ background-color: #F2EFE9;
 }
 
-a,
-a:link,
-a:visited {
-  color: #58355e;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #904E55;
 }
 
-a:hover {
-  color: #fff689;
+li {
+  float: left;
 }
 
-#layout {
-  max-width: 960px;
-	margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
-  grid-template-areas:
-  "header header"
-  "nav introduction"
-  "geography people-and-society"
-  "economy economy"
-  "footer footer";
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-header{
-  grid-area:header;
+li a:hover {
+  background-color: #564E58;
 }
 
-nav{
-  grid-area:nav;
-  text-decorations: none;
-  color:#DC143C;
-  background-color:#fff689;
+h1, {
+  color: #904E55;
 }
 
-#introduction{
-  grid-area:introduction;
+h2, h3, h4, h5 {
+  color: #252627;
 }
 
-#geography{
-  grid-area:geography;
+h1 {
+  font-size: 25px;
 }
 
-#people-and-society{
-  grid-area:people-and-society;
+h2 {
+  font-size: 24px;
 }
 
-#economy{
-  grid-area:economy;
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.introduction {
+  font-style: bold;
+  font-size: 70px;
+}
+
+#introduction {
+  font-size: 40px;
+}
+
+.gridAboutMe {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  padding:10px;
+}
+
+.gridExtraGum {
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:15px;
+  padding:10px;
+}
+
+.gridBeyondMeat {
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:15px;
+  padding:10px;
+}
+
+.gridUmbrellaAcademy {
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:15px;
+  padding:10px;
+}
+img {
+  width: 70%;
 }
 
 footer{
-  grid-area:footer;
-}
-
-h1{
+  height:20px;
   color: #ffffff;
-}
-h2 {
-  margin-top: 0;
-}
-
-header,
-footer {
-  background-color: #DC143C;
-  padding-left: 10px;
-  grid-column: 1 / -1;
+  background-color:#252627;
+  padding: 30px;
 }
